@@ -1256,3 +1256,23 @@ button:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+/* Mobile hero image adjustment */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 520px;
+    background-position: center center;
+  }
+
+  .hero-image {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #29251f;
+  }
+
+  .hero-content {
+    padding: 60px 22px;
+  }
+}
