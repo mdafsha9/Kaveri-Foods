@@ -24,113 +24,8 @@
     rel="stylesheet"
   >
 
-  <!-- Main CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Additional CSS for Business Areas and Opening Hours -->
-  <style>
-    /* About Us: Export-Import and Retail */
-
-    .business-areas {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin: 24px 0;
-    }
-
-    .business-area {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 18px;
-      background: #fff8e9;
-      border: 1px solid #e7d4ae;
-      border-left: 4px solid #c58b35;
-      border-radius: 10px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .business-area:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    }
-
-    .business-icon {
-      font-size: 25px;
-      line-height: 1.3;
-      flex-shrink: 0;
-    }
-
-    .business-area h3 {
-      margin: 0 0 8px;
-      color: #9b5b16;
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .business-area p {
-      margin: 0;
-      font-size: 13px;
-      line-height: 1.6;
-      color: #555;
-    }
-
-
-    /* Visit Us: Opening Hours */
-
-    .visit-hours {
-      margin: 20px 0;
-      padding: 16px;
-      background: #fff8e9;
-      border: 1px solid #e7d4ae;
-      border-radius: 10px;
-      color: #333;
-    }
-
-    .visit-hours h4 {
-      margin: 0 0 12px;
-      color: #9b5b16;
-      font-size: 16px;
-    }
-
-    .hours-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 8px 0;
-      font-size: 13px;
-      border-bottom: 1px solid #eadfc9;
-    }
-
-    .hours-row:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .hours-row strong {
-      text-align: right;
-      white-space: nowrap;
-    }
-
-
-    /* Mobile Responsiveness */
-
-    @media (max-width: 600px) {
-      .business-areas {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      .business-area {
-        padding: 16px;
-      }
-
-      .hours-row {
-        flex-wrap: wrap;
-      }
-    }
-  </style>
 
 </head>
 
@@ -140,7 +35,6 @@
   <div class="announcement">
     A taste of home, close to you.
   </div>
-
 
   <!-- HEADER -->
   <header class="site-header" id="top">
@@ -156,7 +50,6 @@
 
     </a>
 
-
     <!-- Mobile Menu Button -->
     <button
       class="menu-toggle"
@@ -170,7 +63,6 @@
       <span></span>
     </button>
 
-
     <!-- Navigation -->
     <nav class="main-nav" id="main-nav">
 
@@ -183,7 +75,6 @@
     </nav>
 
   </header>
-
 
   <main>
 
@@ -228,7 +119,6 @@
 
     </section>
 
-
     <!-- ABOUT US SECTION -->
     <section class="intro section-wrap" id="about">
 
@@ -241,7 +131,6 @@
         <span class="decorative-line"></span>
 
       </div>
-
 
       <div class="intro-copy">
 
@@ -258,9 +147,7 @@
           kitchen and your family.
         </p>
 
-
         <!-- BUSINESS AREAS -->
-
         <div class="business-areas">
 
           <!-- EXPORT-IMPORT -->
@@ -283,7 +170,6 @@
             </div>
 
           </div>
-
 
           <!-- RETAIL -->
           <div class="business-area">
@@ -308,14 +194,12 @@
 
         </div>
 
-
         <a class="text-link" href="#gallery">
           Take a look inside
           <span aria-hidden="true">↗</span>
         </a>
 
       </div>
-
 
       <div class="intro-stamp" aria-hidden="true">
 
@@ -329,7 +213,6 @@
       </div>
 
     </section>
-
 
     <!-- PRODUCT CATEGORIES -->
     <section class="categories-section" id="categories">
@@ -359,9 +242,7 @@
 
         </div>
 
-
         <div class="category-grid">
-
 
           <!-- RICE AND GRAINS -->
           <article class="category-card">
@@ -388,7 +269,6 @@
 
           </article>
 
-
           <!-- FROZEN FOODS -->
           <article class="category-card">
 
@@ -414,7 +294,6 @@
 
           </article>
 
-
           <!-- SNACKS AND PANTRY -->
           <article class="category-card">
 
@@ -439,7 +318,6 @@
             </div>
 
           </article>
-
 
           <!-- SPICES AND MORE -->
           <article class="category-card">
@@ -468,7 +346,6 @@
 
         </div>
 
-
         <p class="category-disclaimer">
           Product selection may vary. Please visit the store
           for current availability.
@@ -477,7 +354,6 @@
       </div>
 
     </section>
-
 
     <!-- STORE GALLERY -->
     <section class="gallery-section section-wrap" id="gallery">
@@ -499,9 +375,7 @@
 
       </div>
 
-
       <div class="gallery-grid">
-
 
         <!-- CURRENT STOREFRONT -->
         <button
@@ -521,7 +395,6 @@
 
         </button>
 
-
         <!-- STORE INTERIOR 1 -->
         <button
           type="button"
@@ -537,7 +410,6 @@
           >
 
         </button>
-
 
         <!-- STORE INTERIOR 2 -->
         <button
@@ -555,7 +427,6 @@
 
         </button>
 
-
         <!-- RICE SELECTION -->
         <button
           type="button"
@@ -571,7 +442,6 @@
           >
 
         </button>
-
 
         <!-- PREVIOUS STORE -->
         <button
@@ -593,12 +463,10 @@
 
     </section>
 
-
     <!-- VISIT OUR STORE -->
     <section class="visit-section" id="contact">
 
       <div class="visit-inner section-wrap">
-
 
         <!-- VISIT INTRODUCTION -->
         <div>
@@ -619,7 +487,6 @@
 
         </div>
 
-
         <!-- STORE INFORMATION CARD -->
         <div class="visit-card">
 
@@ -627,14 +494,12 @@
 
           <h3>Visit our store</h3>
 
-
           <!-- STORE ADDRESS -->
           <p>
             95, Capital Dr,<br>
             Charlottetown, PE<br>
             C1E 1E8
           </p>
-
 
           <!-- OPENING HOURS -->
           <div class="visit-hours">
@@ -659,7 +524,6 @@
 
           </div>
 
-
           <!-- EMAIL -->
           <p class="visit-email">
 
@@ -670,7 +534,6 @@
             </a>
 
           </p>
-
 
           <!-- GOOGLE MAPS -->
           <a
@@ -690,7 +553,6 @@
     </section>
 
   </main>
-
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -717,7 +579,6 @@
 
   </footer>
 
-
   <!-- IMAGE LIGHTBOX -->
   <dialog class="lightbox" aria-label="Expanded store photograph">
 
@@ -735,7 +596,6 @@
     >
 
   </dialog>
-
 
   <!-- JAVASCRIPT -->
   <script src="script.js"></script>
