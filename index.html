@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Discover authentic Indian groceries, rice, spices, snacks and frozen foods at Kaveri Foods in Charlottetown, PEI."
+    content="Kaveri Foods is an export-import and retail business offering Indian groceries, rice, spices, snacks and frozen foods in Charlottetown, PEI."
   >
 
   <meta name="theme-color" content="#173b2b">
@@ -23,8 +24,114 @@
     rel="stylesheet"
   >
 
-  <!-- Website CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Additional CSS for Business Areas and Opening Hours -->
+  <style>
+    /* About Us: Export-Import and Retail */
+
+    .business-areas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .business-area {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 18px;
+      background: #fff8e9;
+      border: 1px solid #e7d4ae;
+      border-left: 4px solid #c58b35;
+      border-radius: 10px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .business-area:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .business-icon {
+      font-size: 25px;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+
+    .business-area h3 {
+      margin: 0 0 8px;
+      color: #9b5b16;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .business-area p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+
+    /* Visit Us: Opening Hours */
+
+    .visit-hours {
+      margin: 20px 0;
+      padding: 16px;
+      background: #fff8e9;
+      border: 1px solid #e7d4ae;
+      border-radius: 10px;
+      color: #333;
+    }
+
+    .visit-hours h4 {
+      margin: 0 0 12px;
+      color: #9b5b16;
+      font-size: 16px;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 13px;
+      border-bottom: 1px solid #eadfc9;
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .hours-row strong {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+
+    /* Mobile Responsiveness */
+
+    @media (max-width: 600px) {
+      .business-areas {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .business-area {
+        padding: 16px;
+      }
+
+      .hours-row {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -35,7 +142,7 @@
   </div>
 
 
-  <!-- HEADER & NAVIGATION -->
+  <!-- HEADER -->
   <header class="site-header" id="top">
 
     <a class="brand" href="#top" aria-label="Kaveri Foods home">
@@ -48,6 +155,7 @@
       </span>
 
     </a>
+
 
     <!-- Mobile Menu Button -->
     <button
@@ -62,7 +170,8 @@
       <span></span>
     </button>
 
-    <!-- Navigation Links -->
+
+    <!-- Navigation -->
     <nav class="main-nav" id="main-nav">
 
       <a href="#home">Home</a>
@@ -120,7 +229,7 @@
     </section>
 
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT US SECTION -->
     <section class="intro section-wrap" id="about">
 
       <div class="intro-label">
@@ -133,6 +242,7 @@
 
       </div>
 
+
       <div class="intro-copy">
 
         <h2>
@@ -141,12 +251,63 @@
         </h2>
 
         <p>
-          At Kaveri Foods, discover familiar ingredients
-          and much-loved flavours from India. From everyday
-          rice and pantry essentials to snacks and frozen
-          favourites, explore a selection for your kitchen
-          and your family.
+          Kaveri Foods brings familiar ingredients and
+          much-loved flavours from India to our community.
+          We connect international sourcing with local
+          grocery shopping, offering products for your
+          kitchen and your family.
         </p>
+
+
+        <!-- BUSINESS AREAS -->
+
+        <div class="business-areas">
+
+          <!-- EXPORT-IMPORT -->
+          <div class="business-area">
+
+            <span class="business-icon" aria-hidden="true">
+              🌍
+            </span>
+
+            <div>
+
+              <h3>Export-Import</h3>
+
+              <p>
+                Connecting products and goods across
+                borders through international trade
+                and sourcing.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- RETAIL -->
+          <div class="business-area">
+
+            <span class="business-icon" aria-hidden="true">
+              🏪
+            </span>
+
+            <div>
+
+              <h3>Retail</h3>
+
+              <p>
+                Bringing quality Indian groceries, rice,
+                spices, snacks and everyday essentials
+                directly to our local customers.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
 
         <a class="text-link" href="#gallery">
           Take a look inside
@@ -154,6 +315,7 @@
         </a>
 
       </div>
+
 
       <div class="intro-stamp" aria-hidden="true">
 
@@ -200,7 +362,8 @@
 
         <div class="category-grid">
 
-          <!-- Rice & Grains -->
+
+          <!-- RICE AND GRAINS -->
           <article class="category-card">
 
             <img
@@ -226,7 +389,7 @@
           </article>
 
 
-          <!-- Frozen Foods -->
+          <!-- FROZEN FOODS -->
           <article class="category-card">
 
             <img
@@ -252,7 +415,7 @@
           </article>
 
 
-          <!-- Snacks & Pantry -->
+          <!-- SNACKS AND PANTRY -->
           <article class="category-card">
 
             <img
@@ -278,7 +441,7 @@
           </article>
 
 
-          <!-- Spices & More -->
+          <!-- SPICES AND MORE -->
           <article class="category-card">
 
             <img
@@ -304,6 +467,7 @@
           </article>
 
         </div>
+
 
         <p class="category-disclaimer">
           Product selection may vary. Please visit the store
@@ -338,7 +502,8 @@
 
       <div class="gallery-grid">
 
-        <!-- Storefront -->
+
+        <!-- CURRENT STOREFRONT -->
         <button
           type="button"
           class="gallery-photo gallery-large"
@@ -357,7 +522,7 @@
         </button>
 
 
-        <!-- Store Interior 1 -->
+        <!-- STORE INTERIOR 1 -->
         <button
           type="button"
           class="gallery-photo"
@@ -374,7 +539,7 @@
         </button>
 
 
-        <!-- Store Interior 2 -->
+        <!-- STORE INTERIOR 2 -->
         <button
           type="button"
           class="gallery-photo"
@@ -391,7 +556,7 @@
         </button>
 
 
-        <!-- Rice Selection -->
+        <!-- RICE SELECTION -->
         <button
           type="button"
           class="gallery-photo"
@@ -408,7 +573,7 @@
         </button>
 
 
-        <!-- Previous Store Picture -->
+        <!-- PREVIOUS STORE -->
         <button
           type="button"
           class="gallery-photo"
@@ -421,7 +586,7 @@
             alt="Previous Kaveri Foods store"
             loading="lazy"
           >
-          
+
         </button>
 
       </div>
@@ -434,7 +599,8 @@
 
       <div class="visit-inner section-wrap">
 
-        <!-- Visit Introduction -->
+
+        <!-- VISIT INTRODUCTION -->
         <div>
 
           <span class="eyebrow light">
@@ -454,26 +620,59 @@
         </div>
 
 
-        <!-- Store Address Card -->
+        <!-- STORE INFORMATION CARD -->
         <div class="visit-card">
 
           <span class="visit-icon">✳</span>
 
           <h3>Visit our store</h3>
 
+
+          <!-- STORE ADDRESS -->
           <p>
             95, Capital Dr,<br>
             Charlottetown, PE<br>
             C1E 1E8
           </p>
 
+
+          <!-- OPENING HOURS -->
+          <div class="visit-hours">
+
+            <h4>Opening Hours</h4>
+
+            <div class="hours-row">
+
+              <span>Monday – Saturday</span>
+
+              <strong>11:00 AM – 8:00 PM</strong>
+
+            </div>
+
+            <div class="hours-row">
+
+              <span>Sunday</span>
+
+              <strong>12:00 PM – 7:00 PM</strong>
+
+            </div>
+
+          </div>
+
+
+          <!-- EMAIL -->
           <p class="visit-email">
+
             <strong>Email:</strong><br>
+
             <a href="mailto:kaverifoods.ca@gmail.com">
               kaverifoods.ca@gmail.com
             </a>
+
           </p>
 
+
+          <!-- GOOGLE MAPS -->
           <a
             class="button button-light"
             href="https://www.google.com/maps/search/?api=1&query=95%2C+Capital+Dr%2C+Charlottetown%2C+PE+C1E+1E8"
@@ -530,12 +729,15 @@
       ×
     </button>
 
-    <img src="" alt="Expanded Kaveri Foods store photograph">
+    <img
+      src=""
+      alt="Expanded Kaveri Foods store photograph"
+    >
 
   </dialog>
 
 
-  <!-- WEBSITE JAVASCRIPT -->
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
 
 </body>
